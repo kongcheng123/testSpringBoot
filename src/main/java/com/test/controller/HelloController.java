@@ -42,7 +42,6 @@ public class HelloController {
         return "test/help";
     }
 
-
     @RequestMapping("/redis/set")
     public String redisSet(@RequestParam("value")String value){
         boolean isOk = redisService.set("name", value);
